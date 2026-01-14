@@ -156,9 +156,9 @@ grid-template-areas:
 }
 
 .box-3 img {
-    display: block;
-    min-width: 19.8611111rem;
-    margin-inline: 10rem 0;
+    display: inline-block;
+    min-width: 357.5px;
+    margin-inline: 9rem 0 ;
 }
 /* box four and its contents */
 .box-4 {
@@ -296,8 +296,8 @@ a {
         max-width: 100%;
         height: auto;
     }
-    .wrapper {
-
+    .wrapper:not(.box-3 img) {
+        max-width: 300px;
         margin-inline: auto;
         grid-template-areas: 
         'box-two'
@@ -305,7 +305,6 @@ a {
         'box-two'
         'box-five'
         'box-six'
-        'box-three'
         'box-three'
         'box-three'
         'box-three'
@@ -336,7 +335,7 @@ a {
     /* detailed control for specific tweaks */
     .box-2 h2 {
         font-size: 3rem;
-        margin-inline: 0.1rem;
+       
     }
     .box-2 .ten {
         font-size: 3rem;
@@ -345,10 +344,13 @@ a {
         margin-block: 0.1rem;
     }
 .box-3 img {
+    display: block;
+    height: auto;
+    min-width: 100px;
     margin-inline: auto;
 }
     .box-5 img {
-    margin-inline: auto;
+    margin-inline: auto
 }
     .box-6 img {
 margin-block: 1rem -1rem;
@@ -357,19 +359,14 @@ margin-inline: 1rem 0;
 .box-6 h2 {
     margin-block: 1rem;
 }
-.box-3 h2 {
-    margin-inline: 0 2rem;
-
-}
 .box-3 p {
     text-align: center;
-    margin-inline: 0 0;
+    margin-inline: auto;
     font-size: 1rem;
     text-wrap: balance;
 
 }
-.box-3 img {
-    margin-inline: 0 2rem;
-
+.box-1 {
+    margin-block: 1rem;
 }
 }
